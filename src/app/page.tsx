@@ -1,31 +1,9 @@
+import Navigation from "@/components/Navigation";
+
 export default function Home() {
   return (
     <>
-      {/* Top Navigation Bar */}
-      <nav className="fixed top-0 w-full z-50 glass-nav bg-surface/80 flex justify-between items-center px-8 py-4 max-w-full mx-auto">
-        <div className="text-xl font-bold tracking-tighter text-on-surface font-headline">
-          Hitech Precision
-        </div>
-        <div className="hidden md:flex gap-8 items-center">
-          <a className="font-headline tracking-tight text-sm font-semibold text-primary border-b-2 border-primary pb-1 transition-colors duration-200" href="#">Products</a>
-          <a className="font-headline tracking-tight text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Solutions</a>
-          <a className="font-headline tracking-tight text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Industries</a>
-          <a className="font-headline tracking-tight text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">About Us</a>
-          <a className="font-headline tracking-tight text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Support</a>
-        </div>
-        <div className="flex items-center gap-4">
-          <div className="hidden lg:flex items-center bg-surface-container px-3 py-1.5 rounded-lg">
-            <span className="material-symbols-outlined text-on-surface-variant text-sm">search</span>
-            <input className="bg-transparent border-none focus:ring-0 text-xs text-on-surface-variant placeholder-on-surface-variant/50 w-32 ml-2" placeholder="Search components..." type="text"/>
-          </div>
-          <button className="text-on-surface-variant hover:text-primary transition-all p-2">
-            <span className="material-symbols-outlined">shopping_cart</span>
-          </button>
-          <button className="machined-gradient text-on-primary px-5 py-2 rounded-lg text-sm font-semibold font-headline shadow-lg hover:opacity-90 transition-all scale-95 active:opacity-80">
-            Login
-          </button>
-        </div>
-      </nav>
+      <Navigation currentPage="home" />
 
       <main className="pt-24">
         {/* Hero Section */}
@@ -115,9 +93,6 @@ export default function Home() {
     </>
   );
 }
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
             >
               Templates
             </a>{" "}
