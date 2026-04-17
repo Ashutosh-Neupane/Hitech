@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8f9fa;
+  --foreground: #191c1d;
+}
+
+@theme inline {
+  --color-tertiary-fixed: #bee9ff;
+  --color-on-surface-variant: #5b403d;
+  --color-on-background: #191c1d;
+  --color-surface: #f8f9fa;
+  --color-primary-container: #d32f2f;
+  --color-primary-fixed-dim: #ffb3ac;
+  --color-tertiary-container: #00799c;
+  --color-surface-container-highest: #e1e3e4;
+  --color-surface-dim: #d9dadb;
+  --color-outline: #8f6f6c;
+  --color-secondary-fixed: #d4e3ff;
+  --color-on-tertiary: #ffffff;
+  --color-on-primary-container: #fff2f0;
+  --color-surface-variant: #e1e3e4;
+  --color-surface-container-high: #e7e8e9;
+  --color-secondary: #005faf;
+  --color-surface-container-lowest: #ffffff;
+  --color-secondary-fixed-dim: #a5c8ff;
+  --color-on-secondary-container: #003567;
+  --color-on-primary: #ffffff;
+  --color-background: #f8f9fa;
+  --color-primary-fixed: #ffdad6;
+  --color-on-surface: #191c1d;
+  --color-error: #ba1a1a;
+  --color-surface-container: #edeeef;
+  --color-on-error: #ffffff;
+  --color-on-secondary: #ffffff;
+  --color-surface-tint: #ba1a20;
+  --color-on-tertiary-container: #e9f7ff;
+  --color-error-container: #ffdad6;
+  --color-outline-variant: #e4beba;
+  --color-surface-bright: #f8f9fa;
+  --color-primary: #af101a;
+  --color-on-error-container: #93000a;
+  --color-on-primary-fixed-variant: #930010;
+  --color-tertiary-fixed-dim: #7bd1f8;
+  --color-inverse-surface: #2e3132;
+  --color-inverse-on-surface: #f0f1f2;
+  --color-on-secondary-fixed-variant: #004786;
+  --color-on-tertiary-fixed: #001f2a;
+  --color-tertiary: #005f7b;
+  --color-on-tertiary-fixed-variant: #004d65;
+  --color-on-primary-fixed: #410003;
+  --color-secondary-container: #54a0fe;
+  --color-on-secondary-fixed: #001c3a;
+  --color-surface-container-low: #f3f4f5;
+  --color-inverse-primary: #ffb3ac;
+
+  --border-radius-DEFAULT: 0.125rem;
+  --border-radius-lg: 0.25rem;
+  --border-radius-xl: 0.5rem;
+  --border-radius-full: 0.75rem;
+
+  --font-family-headline: var(--font-manrope), sans-serif;
+  --font-family-body: var(--font-inter), sans-serif;
+  --font-family-label: var(--font-inter), sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family-body);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.glass-nav {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.tonal-shift {
+  transition: background-color 0.3s ease;
+}
+
+.machined-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-container) 100%);
+}
+
+.ghost-border {
+  border: 1px solid rgba(0, 95, 175, 0.2);
+}
