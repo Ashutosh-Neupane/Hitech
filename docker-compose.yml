@@ -1,0 +1,15 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    environment:
+      NODE_ENV: production
+      # Optional: ERP catalog (see src/config/catalog.ts)
+      # CATALOG_API_ORIGIN: https://hitech.dndts.net
+      # CATALOG_API_PATH: /api/method/item_list1
+      # CATALOG_API_AUTHORIZATION: token YOUR_KEY:YOUR_SECRET
+      # CATALOG_FETCH_NO_STORE: "1"
+    restart: unless-stopped
